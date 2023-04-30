@@ -1,3 +1,29 @@
+body {
+  font-family: "Times New Roman";
+  font-weight: 400px;
+  font-style: italic;
+  font-size: 22px;
+  line-height: 34px;
+  color: #181D19;
+}
+
+.site-navigation-item a{
+  font-style: normal;
+  font-size: 20px;
+  line-height: 23px;
+  text-decoration: none;
+  color: #2C3847;
+}
+
+ul {
+  list-style-type: none;
+}
+
+
+
+
+
+
 .benefit-items {
     background-image: url("img/benefit-item1.svg");
     background-position: left center;

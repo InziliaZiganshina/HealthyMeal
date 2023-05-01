@@ -22,22 +22,28 @@ ul {
 
 .main-nav {
   background-color: #608354;
+
 }
 
+.main-nav ul li {
+  display: inline-block;
+}
 .main-nav-input {
-  padding: 20px 44px;
+  width: 193px;
+  height: 54px;
+  
   text-decoration: none;
   color: #433434;
   background-color: #E4E2CCE8;
   border-radius: 27%;
   font-size: 20px;
-  font-weight: 400;
-  line-height: 23px;
-  letter-spacing: 0em;
-  text-align: center;
+  padding: 20px 44px;
   
 }
 
+.site-navigation {
+  display: inline-block;
+}
 
 .benefit-items {
     background-image: url("img/benefit-item1.svg");

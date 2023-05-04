@@ -1,3 +1,8 @@
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Times New Roman";
   font-weight: 400px;
@@ -7,6 +12,9 @@ body {
   color: #181D19;
 }
 
+.site-navigation {
+  display: flex;
+}
 .site-navigation-item a{
   font-style: normal;
   font-size: 20px;

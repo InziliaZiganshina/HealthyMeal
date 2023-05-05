@@ -58,3 +58,7 @@ ul {
     background-position: left center;
     background-repeat: no-repeat;
   }
+
+  .hero h1 {
+    font-size: 76px;
+  }

@@ -42,10 +42,12 @@ button {
 
 .site-navigation {
   display: flex;
+  list-style-type: none; 
 }
 
 .site-navigation-item + .site-navigation-item {
   margin-left: 24px;
+  
 }
 
 .site-navigation-link {
@@ -57,16 +59,13 @@ button {
   font-style: normal;
 }
 
-.site-navigation-item + .site-navigation-item {
-  margin-left: 24px;
-}
 
 .main-nav-input {
   margin-left: 52px;
   margin-right: 13px;
 }
 
-.main-nav__link {
+.main-nav-link {
   color: #FFFFFF;
   font-size: 15px;
   line-height: 30px;
@@ -79,6 +78,37 @@ button {
   cursor: pointer;
   font-style: normal;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .top__inner {
   padding: 133px 0 80px; 

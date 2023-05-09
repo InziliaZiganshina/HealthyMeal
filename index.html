@@ -2,158 +2,218 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Healthy meal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link href="css/style.css" rel="stylesheet">
-
     <link type="image/png" sizes="192x192" rel="icon" href="img/favicon.png">
 </head>
-<!--first page-->
+
 <body>
     <header class="main-header">
         <div class="container">
+            <div class="header__inner">
+                <a class = "logo" href="#"><img class="logo__img" src="img/logo.svg" alt="Логотип сайта Healthy meal"></a>
             <nav class="main-nav">
-                <a href="#"><img src="img/logo.svg" alt="Логотип сайта Healthy meal" width="354" height="80"></a>
+                <div class="menu__btn">
+                    <span></span>
+                </div>
                 <ul class="site-navigation">
                     <li class="site-navigation-item"> <a class="site-navigation-link" href="#">О сайте</a> </li>
                     <li class="site-navigation-item"> <a class="site-navigation-link" href="#">Отзывы</a> </li>
                     <li class="site-navigation-item"> <a class="site-navigation-link" href="#">Рассылка</a> </li>
                     <li class="site-navigation-item"> <a class="site-navigation-link" href="#">Рецепты</a> </li>
                 </ul>
+                </nav>
                 <div class="main-nav-input"> 
                     <a class="main-nav-link" href="#">Войти</a>                
                 </div>
-            </nav> 
-        </div>
+                </div>
+                </div>
+
     </header>
 
-    <main class="page-main">
-        <section class="hero">
-          <h1>Здоровая еда вместе с <span>Healthy Meal</span> каждый день</h1>
-          <p>Укрепляйте здоровье, употребляя в рацион только полезную пищу, и сделайте свою жизнь лучше сегодня и завтра</p>
-          <a href="#">Войти</a>
-          <img src="img/header_photo.png" alt="Фотография тарелки здорового питания" width="682" height="510">
-        </section>
+
+    <section class="top">
+        <div class="container">
+          <div class="top__inner">
+            <h1 class="top__title title">Здоровая еда вместе с <span>Healthy Meal</span> каждый день</h1>
+            <p class="top__text">Укрепляйте здоровье, употребляя в рацион только полезную пищу, и сделайте свою жизнь лучше сегодня и завтра</p>
+          </div>
+        </div>
+      </section>
   
-        <section class="benefit">
-            <h2>Почему наш сайт так полезен?</h2>
-            <p>В рецептах вы найдете только органические продукты, выращенные без использования синтетических химикатов</p>
-            <ul class="benefit-list">
-                <li class="benefit-items">
-                    <h3>Разнообразие</h3>
-                    <p>Варианты позволят выбрать подходящий рецепт</p>
-                </li>
-                <li class="benefit-items">
-                    <h3>Рецепты на любой вкус</h3>
-                    <p>Выбирайте в поиске любой понравившийся рецепт</p>
-                </li>
-                <li class="benefit-items">
-                    <h3>100% Органично</h3>
-                    <p>Органические продукты питания выращиваются без использования синтетических химикатов</p>
-                </li>
-            </ul>
-        </section>
-
-        <section class="about">
-            <h2>О сайте</h2>
-            <p>Органические продукты питания выращиваются без использования синтетических химикатов, таких как искусственные пестициды и удобрения, и не содержат генетически модифицированных организмов (ГМО). Органические продукты включают свежие продукты, мясо и молочные продукты, а также обработанные пищевые продукты, такие как крекеры, напитки и замороженные блюда.</p>
-            <a href="#">Рецепты</a>
-            <div class="about-images">
-                <img src="img/about-item1.png" width="305" height="310">
-                <img src="img/about-item2.png" width="301" height="318"> 
-                <img src="img/about-item3.png" width="304" height="670">
+      <section class="tools">
+        <h3 class="tools__title title"> Почему наш сайт так полезен? </h3>
+            <p class="tools__text">В рецептах вы найдете только органические продукты, выращенные без использования синтетических химикатов</p>
+          <div class="container">
+            <div class="tools__items">
+              <div class="tools__item">
+                <img class="tools__item-img" src="images/tools-1.svg" alt="tools img">
+                <h5 class="tools__item-title title">Разнообразие</h5>
+                <p class="tools__item-text">Варианты позволят выбрать подходящий рецепт</p>
+              </div>
+              <div class="tools__item">
+                <img class="tools__item-img" src="images/tools-2.svg" alt="tools img">
+                <h5 class="tools__item-title title">Рецепты на любой вкус</h5>
+                <p class="tools__item-text">Выбирайте в поиске любой понравившийся рецепт</p>
+              </div>
+              <div class="tools__item">
+                <img class="tools__item-img" src="images/tools-3.svg" alt="tools img">
+                <h5 class="tools__item-title title">100% Органично</h5>
+                <p class="tools__item-text">Органические продукты питания выращиваются без использования синтетических химикатов</p>
+              </div>
             </div>
-        </section>
+          </div>
+      </section>
 
-        <section class="fresh-vegetables">
-            <img src="img/fresh-vegetables.png" alt="" width="595" height="554">
-            <h2>Свежие овощи каждый день</h2>
-            <p>Здоровый образ жизни приносит одно удовольствие. Готовьте с удовольствием вместе с сайтом Healthy Meal и делайте свой рацион разнообразнее и полезнее каждый день.</p>
-            <a href="#">Рецепты</a>
-        </section>
+      <section class="direction">
+        <div class="container">
+          <div class="direction__item">
+            <div class="direction__item-content">
+              <h3 class="direction__item-title title">О сайте</h3>
+              <p class="direction__item-titletext">Органические продукты питания выращиваются без использования синтетических химикатов, таких как искусственные пестициды и удобрения, и не содержат генетически модифицированных организмов (ГМО). Органические продукты включают свежие продукты, мясо и молочные продукты, а также обработанные пищевые продукты, такие как крекеры, напитки и замороженные блюда.</p>
+              <a class="direction__link" href="#">Рецепты</a>
+            </div>
+            <img class="direction__item-img" src="images/direction-1.png" alt="Design Professionals images">
+          </div>
+          <div class="direction__item">
+            <img class="direction__item-img" src="images/direction-2.png" alt="Design Professionals images">
+            <div class="direction__item-content">
+              <h3 class="direction__item-title title">Свежие овощи каждый день</h3>
+              <p class="direction__item-titletext">Здоровый образ жизни приносит одно удовольствие. Готовьте с удовольствием вместе с сайтом Healthy Meal и делайте свой рацион разнообразнее и полезнее каждый день.</p>
+              <a class="direction__link" href="#">Рецепты</a>
+            </div>
+          </div>
+          <div class="direction__item">
+            <div class="direction__item-content">
+              <h3 class="direction__item-title title">Рецепты от лучших поваров</h3>
+              <p class="direction__item-titletext">В описании каждого рецепта вы найдете редкие советы от ведующих шеф-поваров страны и мира. Помимо правильного питания в своем рационе вы получите массу полезных рекомендаций.</p>
+              <ul class="direction__list">
+                <li class="direction__list-item">Гарантированное вкусное блюдо</li>
+                <li class="direction__list-item">Правильное питание обеспечено</li>
+                <li class="direction__list-item">Каждый рецепт занимает минимум времени</li>
+              </ul>
+            </div>
+            <img class="direction__item-img" src="images/direction-3.png" alt="Design Professionals images" width="494" height="499">
+          </div>
+        </div>
+      </section>
 
-        <section class="best-recipes">
-            <h2>Рецепты от лучших поваров</h2>
-            <p>В описании каждого рецепта вы найдете редкие советы от ведующих шеф-поваров страны и мира. Помимо правильного питания в своем рационе вы получите массу полезных рекомендаций.</p>
-            <ul class="recipes-benefits-list">
-                <li class="recipes_benefits_list__item">Гарантированное вкусное блюдо</li>
-                <li class="recipes_benefits_list__item">Правильное питание обеспечено</li>
-                <li class="recipes_benefits_list__item">Каждый рецепт занимает минимум времени</li>
-            </ul>
-            <img src="img/best-recipes.png" alt="" width="594" height="551">
-        </section>
+      <section class="tools">
+        <h3 class="tools__title title">Редкие рецепты специально для Вас</h3>
+        <p class="tools__text">Рецепты включают состав продуктов, изготовленных из высококачественных и 100% органических ингредиентов</p>
+        <div class="tools__inner">
+          <div class="container">
+            <div class="tools__items">
+              <div class="tools__item">
+                <img class="tools__item-img" src="images/tools-1.jpg" alt="tools img">
+                <h5 class="tools__item-title title">Зеленый салат</h5>
+                <p class="tools__item-text">Салат состоит из рыбы, листьев салата и заправляется вкусным оливковым маслом.</p>
+              </div>
+              <div class="tools__item">
+                <img class="tools__item-img" src="images/tools-2.jpg" alt="tools img">
+                <h5 class="tools__item-title title">Салат из говядины</h5>
+                <p class="tools__item-text">Салат сочетается с аппетитным ломтиком бекона и заправляется вкусным и свежим кунжутным маслом.</p>
+              </div>
+              <div class="tools__item">
+                <img class="tools__item-img" src="images/tools-3.jpg" alt="tools img">
+                <h5 class="tools__item-title title">Ореховый салат</h5>
+                <p class="tools__item-text">Салат включает такие ингредиенты как: перец, шампиньоны, листья салата айсберг, заправленным оливковым маслом.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="tools__link" href="#">Смотреть все</a>
+      </section>
 
-        <section class="special-recipes">
-            <h2>Редкие рецепты специально для Вас</h2>
-            <p>Рецепты включают состав продуктов, изготовленных из высококачественных и 100% органических ингредиентов</p>
-            <ul class="special-recipes-list">
-                <li class="special-recipes-list-item">
-                    <img src="img/special-recipes-list-item1.png" alt="Зеленый салат" width="256" height="250">
-                    <h3>Зеленый салат</h3>
-                    <p>Салат состоит из рыбы, листьев салата и заправляется вкусным оливковым маслом.</p>
-                </li>
+      <section class="blog">
+        <div class="container">
+          <h3 class="blog__title title">Отзывы довольных пользователей</h3>
+          <div class="slider">
+            <div class="slider__item">
+              <img class="slider__item-img" src="images/blog-1.jpg" alt="blogimages">
+              <div class="slider__item-info">
+                <a class="slider__item-author" href="#">Иван Петров</a> | 03 Февраля 2023
+              </div>
+              <a class="slider__item-title title" href="#">
+                В большой спешке в течение рабочего дня трудно бывает правильно питаться. Но с сайтом “Healthy Mealt” есть возможность употреблять в рацион здоровую еду и не вредить своему желудку фаст-фудом. Рекомендую этот сайт своим друзьям. 
+              </a>
+            </div>
+            <div class="slider__item">
+              <img class="slider__item-img" src="images/blog-2.jpg" alt="blogimages">
+              <div class="slider__item-info">
+                <a class="slider__item-author" href="#">Лиза Егорова</a> | 17 Января 2023
+              </div>
+              <a class="slider__item-title title" href="#">Классный сайт. Всегда помогает в подборе питания, поэтому не нужно придумывать меню.</a>
+            </div>
+            <div class="slider__item">
+              <img class="slider__item-img" src="images/blog-3.jpg" alt="blogimages">
+              <div class="slider__item-info">
+                <a class="slider__item-author" href="#">Марина Корнеева</a> | 05 Апреля 2023
+              </div>
+              <a class="slider__item-title title" href="#">Сайт Healthy Meal - отличная находка для людей, которые любят правильно питаться. Все рецепты классные и продуманные!</a>
+            </div>
+            <div class="slider__item">
+              <img class="slider__item-img" src="images/blog-4.jpg" alt="blogimages">
+              <div class="slider__item-info">
+                <a class="slider__item-author" href="#">Илья Федоров</a> | 15 Марта 2023
+              </div>
+              <a class="slider__item-title title" href="#">Когда занимаешься спортом - питание играет немаловажную роль. С сайтом “Healthy Meal” нет надобности заботиться о том, что приготовить, потому что все самые полезные, а главное - вкусные рецепты уже собраны на сайте</a>
+            </div>
+            <div class="slider__item">
+              <img class="slider__item-img" src="images/blog-5.jpg" alt="blogimages">
+              <div class="slider__item-info">
+                <a class="slider__item-author" href="#">Максим Елизаров</a> | 07 Февраля 2023
+              </div>
+              <a class="slider__item-title title" href="#">По совету знакомых нашел этот сайт и нисколько не пожалел! Теперь сам рекомендую всем!</a>
+            </div>
+            <div class="slider__item">
+              <img class="slider__item-img" src="images/blog-6.jpg" alt="blogimages">
+              <div class="slider__item-info">
+                <a class="slider__item-author" href="#">Слава Антоненко</a> | 27 Марта 2023
+              </div>
+              <a class="slider__item-title title" href="#">Обожаю этот сайт! Необыкновенно полезные рецепты! Рекомендую всем!</a>
+            </div>
+            <div class="slider__item">
+              <img class="slider__item-img" src="images/blog-7.jpg" alt="blogimages">
+              <div class="slider__item-info">
+                <a class="slider__item-author" href="#">Мила Янина</a> | 03 Апреля 2023
+              </div>
+              <a class="slider__item-title title" href="#">Классный сайт с полезными рецептами. Все знакомые в восторге.</a>
+            </div>
+            <div class="slider__item">
+              <img class="slider__item-img" src="images/blog-8.jpg" alt="blogimages">
+              <div class="slider__item-info">
+                <a class="slider__item-author" href="#">Света Филиппова</a> | 09 Января 2023
+              </div>
+              <a class="slider__item-title title" href="#">Мне еще не встречались такие классные подброки рецептов! Сайт - Восторг!</a>
+            </div>
+            <div class="slider__item">
+              <img class="slider__item-img" src="images/blog-9.jpg" alt="blogimages">
+              <div class="slider__item-info">
+                <a class="slider__item-author" href="#">Дмитрий Сидихин</a> | 15 Февраля 2023
+              </div>
+              <a class="slider__item-title title" href="#">Сайт Healthy Meal предлагает классные рецепты, удобно, что можно и самому выкладывать!</a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-                <li class="special-recipes-list-item">
-                    <img src="img/special-recipes-list-item2.png" alt="Салат из говядины" width="256" height="250">
-                    <h3>Салат из говядины</h3>
-                    <p>Салат сочетается с аппетитным ломтиком бекона и заправляется вкусным и свежим кунжутным маслом.</p>
-                </li>
-
-                <li class="special-recipes-list-item">
-                    <img src="img/special-recipes-list-item3.png" alt="Ореховый салат" width="256" height="250">
-                    <h3>Ореховый салат</h3>
-                    <p>Салат включает такие ингредиенты как: перец, шампиньоны, листья салата айсберг, заправленным оливковым маслом.</p>
-                </li>
-            </ul>
-            <a href="#">Смотреть все</a>
-        </section>
-
-        <section class="reviews">
-            <h2>Отзывы довольных пользователей</h2>
-            <ul class="review-list">
-                <li class="review-list-item">
-                    <img src="img/review1.svg" alt="Фото пользователя" width="91" height="91">
-                    <p>ИВАН ПЕТРОВ</p>
-                    <p>На сайте с января 2023</p>
-                    <p>В большой спешке в течение рабочего дня тружно бывает правильно питаться. Но с сайтом “Healthy Mealt” есть возможность употреблять в рацион здоровую еду и не вредить своему желудку фаст-фудом. Рекомендую этот сайт своим друзьям. </p>
-                </li>
-                <li class="review-list-item">
-                    <img src="img/review2.svg" alt="Фото пользователя" width="91" height="91">
-                    <p>ИЛЬЯ ФЕДОРОВ</p>
-                    <p>На сайте с марта 2023</p>
-                    <p>Когда занимаешься спортом - питание играет немаловажную роль. С сайтом “Healthy Meal” нет надобности заботиться о том, что приготовить, потому что все самые полезные, а главное - вкусные рецепты уже собраны на сайте</p>
-                </li>
-                <li class="review-list-item">
-                    <img src="img/review2.svg" alt="Фото пользователя" width="91" height="91">
-                    <p>ИЛЬЯ ФЕДОРОВ</p>
-                    <p>На сайте с марта 2023</p>
-                    <p>Когда занимаешься спортом - питание играет немаловажную роль. С сайтом “Healthy Meal” нет надобности заботиться о том, что приготовить, потому что все самые полезные, а главное - вкусные рецепты уже собраны на сайте</p>
-                </li>
-                <li class="review-list-item">
-                    <img src="img/review2.svg" alt="Фото пользователя"width="91" height="91">
-                    <p>ИЛЬЯ ФЕДОРОВ</p>
-                    <p>На сайте с марта 2023</p>
-                    <p>Когда занимаешься спортом - питание играет немаловажную роль. С сайтом “Healthy Meal” нет надобности заботиться о том, что приготовить, потому что все самые полезные, а главное - вкусные рецепты уже собраны на сайте</p>
-                </li>
-                <li class="review-list-item">
-                    <img src="img/review2.svg" alt="Фото пользователя" width="91" height="91">
-                    <p>ИЛЬЯ ФЕДОРОВ</p>
-                    <p>На сайте с марта 2023</p>
-                    <p>Когда занимаешься спортом - питание играет немаловажную роль. С сайтом “Healthy Meal” нет надобности заботиться о том, что приготовить, потому что все самые полезные, а главное - вкусные рецепты уже собраны на сайте</p>
-                </li>
-            </ul>
-        </section>
-
-        <section class="mails">
-            <h2>Подпишитесь чтобы получать рассылку</h2>
-            <p>Введите свой email ниже, чтобы получить еженедельные рецепты и новости</p>
-            <input type="text">
-            <button>Получить письмо</button>
-        </section>
-      </main>
-    
-
-      <footer class="main-footer">
-        <p>Healthy meal © Copyright 2023</p>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__inner">
+            <a class="logo" href="#"> <img class="logo__img" src="images/logo.png" alt="logo"></a>
+            <form class="footer__form" action="#">
+              <p class="footer__form-text">Подпишитесь чтобы получать рассылку</p>
+              <input class="footer__form-input" type="text" placeholder="Введите свой email">
+              <button class="footer__form-btn" type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
       </footer>
 </body>
 

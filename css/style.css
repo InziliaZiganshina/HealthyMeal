@@ -36,21 +36,19 @@ button {
   height: 78px; 
 }
 
-.main-nav {
+.menu {
   margin-left: auto;
 }
 
-.site-navigation {
+.menu__list {
   display: flex;
-  list-style-type: none; 
 }
 
-.site-navigation-item + .site-navigation-item {
+.menu__list-item + .menu__list-item {
   margin-left: 24px;
-  
 }
 
-.site-navigation-link {
+.menu__list-link {
   color: #2C3847;
   font-size: 15px;
   line-height: 30px;
@@ -59,13 +57,12 @@ button {
   font-style: normal;
 }
 
-
-.main-nav-input {
+.user-nav {
   margin-left: 52px;
   margin-right: 13px;
 }
 
-.main-nav-link {
+.user-nav__link {
   color: #FFFFFF;
   font-size: 15px;
   line-height: 30px;
@@ -78,37 +75,6 @@ button {
   cursor: pointer;
   font-style: normal;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .top__inner {
   padding: 133px 0 80px; 

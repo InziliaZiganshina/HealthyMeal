@@ -397,3 +397,22 @@ span {
 .menu__btn::after {
   bottom: 0;
 }
+
+.Recipe7 {
+  border-radius: 25px;
+  
+}
+.Recipe8 {
+  border-radius: 25px;
+  
+}
+
+.recipe-img {
+  float: right;
+  border-radius: 25px;
+}
+.list_of_recipes {
+  border-style: solid;
+border-color: #2E8E43;
+border-radius: 25px;
+}

@@ -1,3 +1,5 @@
+/*ИНЗИЛЯ*/
+
 /*styles for main page*/
 
 * {
@@ -534,7 +536,7 @@ ol.leaders li:after {
 /*styles for registration page*/
 
 .input {
-  margin-top:  100px;
+  margin-top:  80px;
 }
 
 .input-inner {
@@ -562,12 +564,14 @@ ol.leaders li:after {
 }
 
 
+/*styles for registration page*/
+.reg {
+  margin-bottom: 50px;
+}
+/*/ИНЗИЛЯ*/
 
 
-
-
-
-
+/*РАСИМ*/
 
 .Recipe7 {
   border-radius: 25px;

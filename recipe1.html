@@ -1,65 +1,109 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Healthy meal-Рецепт 1</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Healthy meal - Салат со шпинатом, грецким орехом и авокадо</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link type="image/png" sizes="192x192" rel="icon" href="images/favicon.png">
 </head>
 
 <body>
-    <header class="main-header">
-        <nav class="main-nav">
-            <a href="#"><img src="img/logo.svg" alt="Логотип сайта Healthy meal" width="354" height="80"></a>
-            <ul class="site-navigation">
-                <li class="site-navigation-item"> <a href="#">О сайте</a> </li>
-                <li class="site-navigation-item"> <a href="#">Отзывы</a> </li>
-                <li class="site-navigation-item"> <a href="#">Рассылка</a> </li>
-                <li class="site-navigation-item"> <a href="#">Рецепты</a> </li>
-            </ul>
-            <a href="#">Войти</a>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a class="logo" href="#">
+          <img class="logo__img" src="images/logo.svg" alt="logo">
+        </a>
+        <nav class="menu">
+          <div class="menu__btn">
+            <span></span>
+          </div>
+          <ul class="menu__list">
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#about">О сайте</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#views">Отзывы</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#mails">Рассылка</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="list.html">Рецепты</a>
+            </li>
+          </ul>
         </nav>
-    </header>
-
-    <main>
-        <a href="#">На главную</a>
-        <h2>САЛАТ СО ШПИНАТОМ, ГРЕЦКИМ ОРЕХОМ И АВОКАДО</h2>
-        <p>Время готовки: примерно 3 минуты</p>
-
-        <section class="recipe">
-            <ol class="ingredients">
-                <h3>Состав ингредиентов:</h3>
-                <li class="ingredients-items">Шпинат 1..............................................................1 пучок</li>
-                <li class="ingredients-items">Грецкий орех.......................................................по вкусу</li>
-                <li class="ingredients-items">Авокадо.................................................................1 штука</li>
-                <li class="ingredients-items">Оливковое масло................................................по вкусу</li>
-                <li class="ingredients-items">Лимонный сок...............................................................1 ч.л.</li>
+        <div class="user-nav">
+          <a class="user-nav__link" href="account.html">Войти</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <section class="main">
+    <section class="back-to-main">
+        <div class="container">
+            <a href="index.html" class="back-to-main__href">На главную</a>
+            <h2 class="title back-to-main__title">САЛАТ СО ШПИНАТОМ, ГРЕЦКИМ ОРЕХОМ И АВОКАДО</h2>
+            <p class="back-to-main__time">Время готовки: примерно 3 минуты</p>
+        </div>
+    </section>
+    
+    <section class="recipe">
+        <div class="container">
+            <ol class="ingredients leaders">
+                <h3 class="ingredients__title">Состав ингредиентов:</h3>
+                <li class="ingredients-items"><span>Шпинат 1</span><span>1 пучок</span></li>
+                <li class="ingredients-items"><span>Грецкий орех</span><span>по вкусу</span></li>
+                <li class="ingredients-items"><span>Авокадо</span><span>1 штука</span></li>
+                <li class="ingredients-items"><span>Оливковое масло</span><span>по вкусу</span></li>
+                <li class="ingredients-items"><span>Лимонный сок</span><span>1 ч.л.</span></li>
             </ol>
+        </div>
+    </section>
+    
+    <section class="recipe-text">
+        <div class="container">
+            <h3 class="recipe-text-title">Инструкция приготовления:</h3>
+                <div class="recipe-text-all">
+                    <ol class="recipe-steps">
+                        <li class="recipe-items">Промыть, просушить и нарвать на небольшие кусочки листья шпината.</li>
+                        <li class="recipe-items">Авокадо промыть, нарезать на небольшие кусочки.</li>
+                        <li class="recipe-items">В одну тарелку переместить авокадо и добавить ранее нарезанный шпинат.</li>
+                        <li class="recipe-items">Добавить в тарелку орехи.</li>
+                        <li class="recipe-items">Заправить всё оливковым маслом.</li>
+                        <li class="recipe-items">По вкусу добавить лимонный сок.</li> 
+                    </ol>
+                    <div class="recipe-text-image">
+                        <img src="images/recipe1-image.jpg" alt="Фото сервировки салата со шпинатом, грецким орехом и авокадо">
+                        <p class="recipe-text-bottom">Вариант сервировки</p>
+                    </div>
+                </div>
+            </div>
         </section>
+    </section>
 
-        <section class="recipe-text">
-            <h3>Инструкция приготовления:</h3>
-            <ol class="recipe-steps">
-                <li class="recipe-items">Промыть, просушить и нарвать на небольшие кусочки листья шпината.</li>
-                <li class="recipe-items">Авокадо промыть, нарезать на небольшие кусочки.</li>
-                <li class="recipe-items">В одну тарелку переместить авокадо и добавить ранее нарезанный шпинат.</li>
-                <li class="recipe-items">Добавить в тарелку орехи.</li>
-                <li class="recipe-items">Заправить всё оливковым маслом.</li>
-                <li class="recipe-items">По вкусу добавить лимонный сок.</li> 
-            </ol>
-            <img src="img/recipe1-image.png" alt="Фото сервировки салата со шпинатом, грецким орехом и авокадо">
-        </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <a class="logo" href="#"> <img class="logo__img" src="images/logo.png" alt="logo"></a>
+        <form class="footer__form" action="#">
+          <p id = "mails" class="footer__form-text">Подпишитесь чтобы получать рассылку</p>
+          <input class="footer__form-input" type="text" placeholder="Введите свой email">
+          <button class="footer__form-btn" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </footer>
 
-        <section class="mails">
-            <h2>Подпишитесь чтобы получать рассылку</h2>
-            <p>Введите свой email ниже, чтобы получить еженедельные рецепты и новости</p>
-            <input type="text">
-            <button>Получить письмо</button>
-        </section>
-        
-    </main>
-
-      <footer class="main-footer">
-        <p>Healthy meal © Copyright 2023</p>
-      </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

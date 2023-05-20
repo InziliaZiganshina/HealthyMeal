@@ -531,16 +531,35 @@ ol.leaders li:after {
   color: #000000;
 }
 
+/*styles for registration page*/
 
+.input {
+  margin-top:  100px;
+}
 
+.input-inner {
+  max-width: 560px; 
+  text-align: center;
+  margin: auto;
+}
 
+.input-registration {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
 
+.input-registration-href {
+  margin-bottom: 35px;
+  font-size: 20px;
+  line-height: 30px;
+  color: #2e8813;
+  font-style: normal;
+  text-decoration: none;
+}
 
-
-
-
-
-
+.input_emails {
+  margin-bottom: 20px;
+}
 
 
 

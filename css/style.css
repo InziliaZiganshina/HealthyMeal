@@ -108,7 +108,7 @@ button {
 }
 
 .tools {
-  padding-top: 110px;
+  padding-top: 0px;
   text-align: center;
   margin-bottom: 120px;
 }
@@ -135,19 +135,21 @@ button {
 
 .tools__items {
   display: flex;
-  justify-content: space-between;
   padding: 8px 16px 0;
   margin-bottom: 60px;
-  text-align: center;
+  align-items : center;
 }
 
 .tools__item {
+  margin: 0 auto;
   width: 280px;
+
 }
 
 .tools__item-img {
   margin-bottom: 30px;
   vertical-align:middle;
+ 
 }
 
 .tools__item-title {
@@ -173,12 +175,13 @@ button {
 }
 
 .direction {
-  padding: 120px 0 100px;
+  padding: 120px 0 10px;
 }
 
 .direction__item {
   display: flex;
   justify-content: space-between;
+
   margin-bottom: 190px;
 }
 
@@ -220,7 +223,7 @@ button {
 }
 
 .direction__list-item {
-  margin-bottom: 30px;    
+  margin-bottom: 0px;    
   padding-left: 35px;    
   position: relative;
 }

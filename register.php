@@ -1,3 +1,4 @@
+<?php include('server.php') ?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -44,17 +45,38 @@
 
   <section class="input">
     <div class="container">
-        <div class="input-inner">
+       <div class="input-inner">
             <h1 class="tools__title">Регистрация</h1>
-            <div class="input_emails">
-                <input class="footer__form-input" type="text" placeholder="ФАМИЛИЯ">
-                <input class="footer__form-input" type="text" placeholder="ИМЯ">
-                <input class="footer__form-input" type="text" placeholder="ОТЧЕСТВО">
-                <input class="footer__form-input" type="text" placeholder="ДАТА РОЖДЕНИЯ">
-                <input class="footer__form-input" type="text" placeholder="ГОРОД">
-            </div>
-            <button class="footer__form-btn reg" type="submit">Готово</button>
-        </div>
+
+        <form method="post" action="register.php">
+          <?php include('errors.php'); ?>
+
+          <div class="input-group">
+            <input class="footer__form-input" type="text" placeholder="Имя пользователя" name="username" value="<?php echo $username; ?>">
+          </div>
+
+          <div class="input-group">
+            <input class="footer__form-input" type="email" placeholder="Email" name="email" value="<?php echo $email; ?>">
+          </div>
+          
+          <div class="input-group">
+            <input class="footer__form-input" type="password" placeholder="Пароль" name="password_1">
+          </div>
+          
+          <div class="input-group">
+            <input class="footer__form-input" placeholder="Повторите пароль" type="password" name="password_2">
+          </div>
+          
+          <div class="input-group">
+            <button type="submit" class="footer__form-btn reg" name="reg_user">Готово</button>
+          </div>
+          
+          <p>
+            Уже зарегистрированы? <br> <a href="login.php">Вход</a>
+          </p>
+        </form>
+      
+      </div>
     </div>
   </section>
 

@@ -1,3 +1,5 @@
+<?php include('server.php') ?>
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -46,17 +48,42 @@
     <div class="container">
         <div class="input-inner">
             <h1 class="tools__title">Вход</h1>
+
+
             <div class="input_emails">
-                <input class="footer__form-input" type="text" placeholder="Логин">
-                <input class="footer__form-input" type="text" placeholder="Пароль">
+
+              <form method="post" action="login.php">
+                <?php include('errors.php'); ?>
+                <div class="input-group">
+                  <input class="footer__form-input" type="text" placeholder="Имя пользователя" name="username" >
+                </div>
+                <div class="input-group">
+
+                  <input class="footer__form-input" type="password" placeholder="Пароль" name="password">
+                </div>
+
             </div>
-            <button class="footer__form-btn" type="submit">Войти</button>
+            <div class="input-group">
+              <button type="submit" class="footer__form-btn" name="login_user">Войти</button>
+            </div>
+
+
+
+
             <div class = "input-registration">
                 <a class ="input-registration-href" href="registration.html">Регистрация</a> 
             </div>
+          </form>
         </div>
     </div>
   </section>
+
+
+
+
+
+
+
 
   <footer class="footer">
     <div class="container">

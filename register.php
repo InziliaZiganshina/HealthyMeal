@@ -46,36 +46,28 @@
   <section class="input">
     <div class="container">
        <div class="input-inner">
-            <h1 class="tools__title">Регистрация</h1>
-
+        <h1 class="tools__title">Регистрация</h1>
         <form method="post" action="register.php">
           <?php include('errors.php'); ?>
-
           <div class="input-group">
             <input class="footer__form-input" type="text" placeholder="Имя пользователя" name="username" value="<?php echo $username; ?>">
           </div>
-
           <div class="input-group">
             <input class="footer__form-input" type="email" placeholder="Email" name="email" value="<?php echo $email; ?>">
           </div>
-          
           <div class="input-group">
             <input class="footer__form-input" type="password" placeholder="Пароль" name="password_1">
           </div>
-          
           <div class="input-group">
             <input class="footer__form-input" placeholder="Повторите пароль" type="password" name="password_2">
           </div>
-          
           <div class="input-group">
             <button type="submit" class="footer__form-btn reg" name="reg_user">Готово</button>
           </div>
-          
           <p>
             Уже зарегистрированы? <br> <a href="login.php">Вход</a>
           </p>
         </form>
-      
       </div>
     </div>
   </section>

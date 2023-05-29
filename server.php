@@ -50,7 +50,7 @@ if (isset($_POST['reg_user'])) {
   			  VALUES('$username', '$email', '$password')";
   	mysqli_query($db, $query);
   	$_SESSION['username'] = $username;
-  	$_SESSION['success'] = "Теперь вы вошли в систему";
+  /*	$_SESSION['success'] = "Теперь вы вошли в систему";*/
   	header('location: index.php');
   }
 }

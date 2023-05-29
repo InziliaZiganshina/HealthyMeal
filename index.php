@@ -1,4 +1,16 @@
+<?php 
+  session_start(); 
 
+  if (!isset($_SESSION['username'])) {
+  	$_SESSION['msg'] = "You must log in first";
+  	header('location: login.php');
+  }
+  if (isset($_GET['logout'])) {
+  	session_destroy();
+  	unset($_SESSION['username']);
+  	header("location: login.php");
+  }
+?>
 
 <!DOCTYPE html>
 <html lang="ru">
@@ -36,8 +48,8 @@
               <a class="menu__list-link" href="list.html">Рецепты</a>
             </li>
             <li class="menu__list-item">
-              <a class="user-nav__link" href="login.php">Войти</a>
-              <!--<a class="menu__list-link" href="login.php">Личный кабинет</a>-->
+              <!--<a class="user-nav__link" href="login.php">Войти</a>
+              <a class="menu__list-link" href="login.php">Личный кабинет</a>-->
             </li>
           </ul>
         </nav>
@@ -57,7 +69,7 @@
         
             <!-- logged in user information -->
             <?php  if (isset($_SESSION['username'])) : ?>
-              <p>Welcome <strong><?php echo $_SESSION['username']; ?></strong></p>
+              <p>Привет <strong><?php echo $_SESSION['username']; ?></strong></p>
               <p> <a href="index.php?logout='1'" style="color: red;">Выйти</a> </p>
               
             <?php endif ?>

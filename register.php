@@ -36,9 +36,9 @@
             </li>
           </ul>
         </nav>
-        <div class="user-nav">
+        <!--<div class="user-nav">
           <a class="user-nav__link" href="account.html">Войти</a>
-        </div>
+        </div>-->
       </div>
     </div>
   </header>

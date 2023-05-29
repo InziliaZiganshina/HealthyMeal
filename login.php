@@ -40,9 +40,9 @@
             </li>
           </ul>
         </nav>
-        <div class="user-nav">
+        <!--<div class="user-nav">
           <a class="user-nav__link" href="register.php">Войти</a>
-        </div>
+        </div>-->
       </div>
     </div>
   </header>

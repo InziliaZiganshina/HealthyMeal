@@ -18,11 +18,14 @@
   <header class="header">
     <div class="container">
       <div class="header__inner">
-        <a class="logo" href="#">
+        <a class="logo" href="index.php">
           <img class="logo__img" src="images/logo.svg" alt="logo">
         </a>
         <nav class="menu">
           <ul class="menu__list">
+          <li class="menu__list-item">
+              <a class="menu__list-link" href="index.php">На главную</a>
+            </li>
             <li class="menu__list-item">
               <a class="menu__list-link" href="#about">О сайте</a>
             </li>
@@ -33,12 +36,12 @@
               <a class="menu__list-link" href="#mails">Рассылка</a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="list.html">Рецепты</a>
+              <a class="menu__list-link" href="list.php">Рецепты</a>
             </li>
           </ul>
         </nav>
         <div class="user-nav">
-          <a class="user-nav__link" href="account.html">Войти</a>
+          <a class="user-nav__link" href="register.php">Войти</a>
         </div>
       </div>
     </div>
@@ -46,37 +49,36 @@
 
   <section class="input">
     <div class="container">
-        <div class="input-inner">
-            <h1 class="tools__title">Вход</h1>
-            <div class="input_emails">
-              <form method="post" action="login.php">
-                <?php include('errors.php'); ?>
-                <div class="input-group">
-                  <input class="footer__form-input" type="text" placeholder="Имя пользователя" name="username" >
-                </div>
-                <div class="input-group">
-                  <input class="footer__form-input" type="password" placeholder="Пароль" name="password">
-                </div>
-
-                </form>
-
+      <div class="input-inner">
+        <h1 class="tools__title">Вход</h1>
+        <div class="input_emails">
+          <form method="post" action="login.php">
+            <?php include('errors.php'); ?>
+            <div class="input-group">
+              <input class="footer__form-input" type="text" placeholder="Имя пользователя" name="username" >
             </div>
+            <div class="input-group">
+              <input class="footer__form-input" type="password" placeholder="Пароль" name="password">
+            </div>
+            
             <div class="input-group">
               <button type="submit" class="footer__form-btn" name="login_user">Войти</button>
             </div>
+            
             <div class = "input-registration">
-                <a class ="input-registration-href" href="registration.html">Регистрация</a> 
+              <a class ="input-registration-href" href="register.php">Регистрация</a> 
             </div>
-        </form>
+          </form>
+        </div>
+      </div>
     </div>
-</div>
   </section>
 
 
   <footer class="footer">
     <div class="container">
       <div class="footer__inner">
-        <a class="logo" href="#"> <img class="logo__img" src="images/logo.png" alt="logo"></a>
+        <a class="logo" href="index.php"> <img class="logo__img" src="images/logo.png" alt="logo"></a>
         <form class="footer__form" action="#">
           <p id = "mails" class="footer__form-text">Подпишитесь чтобы получать рассылку</p>
           <input class="footer__form-input" type="text" placeholder="Введите свой email">

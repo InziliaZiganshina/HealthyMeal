@@ -30,7 +30,7 @@
   <header class="header">
     <div class="container">
       <div class="header__inner">
-        <a class="logo" href="index.html">
+        <a class="logo" href="index.php">
           <img class="logo__img" src="images/logo.svg" alt="logo">
         </a>
         <nav class="menu">
@@ -46,6 +46,9 @@
             </li>
             <li class="menu__list-item">
               <a class="menu__list-link" href="list.html">Рецепты</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="list.html">Личный кабинет</a>
             </li>
           </ul>
         </nav>
@@ -66,11 +69,12 @@
             <!-- logged in user information -->
             <?php  if (isset($_SESSION['username'])) : ?>
               <p>Welcome <strong><?php echo $_SESSION['username']; ?></strong></p>
-              <p> <a href="index.php?logout='1'" style="color: red;">logout</a> </p>
+              <p> <a href="index.php?logout='1'" style="color: red;">Выйти</a> </p>
+              
             <?php endif ?>
         </div>
         
-          <a class="user-nav__link" href="account.html">Войти</a>
+         <!-- <a class="user-nav__link" href="account.html">Войти</a> -->
         </div>
       </div>
     </div>

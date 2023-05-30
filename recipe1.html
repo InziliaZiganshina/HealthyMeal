@@ -38,9 +38,6 @@
             </li>
           </ul>
         </nav>
-        <div class="user-nav">
-          <a class="user-nav__link" href="account.html">Войти</a>
-        </div>
       </div>
     </div>
   </header>
@@ -88,6 +85,38 @@
         </section>
     </section>
 
+
+
+
+    <div class="page light-theme">
+      <div class="inner-news">
+        <div class="container">
+          <div class="news-full">          
+            <div class="news-stats">
+              <button class="heart" type="button"><span class="likes-number">71</span></button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="comment-feed container">
+          <h2>Комментарии</h2>
+          <ol class="comment-list">
+            <li class="user-comment">Полезный рецепт!</li>
+          </ol>
+          <form action="https://echo.htmlacademy.ru/courses" method="post" class="comment-form">
+            <div class="comment-inner">
+              <label class="comment-label" for="comment-input">ваш комментарий</label>
+              <input type="text" class="comment-field" value="A Java и JavaScript - это одно и то же?" placeholder="Комментарий" required id="comment-input">
+            </div>
+            <button class="button" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+
+
+
+      
+
   <footer class="footer">
     <div class="container">
       <div class="footer__inner">
@@ -104,6 +133,12 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/main.js"></script>
+
+
+  <script src="js/likes.js"></script>
+  <script src="js/comments.js"></script>
+
+
 </body>
 
 </html>
